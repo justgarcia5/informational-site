@@ -1,0 +1,15 @@
+@import "~bootstrap/scss/bootstrap";
+@import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
+
+.bg-dark {
+  // background: linear-gradient(to right, rgba(0, 0, 0, 0.397) , rgba(0, 0, 0, 0));
+  background-color: rgba(0, 0, 0, 0.466)!important;
+}
+
+.intro-border {
+  margin-top: 600px;
+  border: 1px solid rgba(0, 0, 0, 0.466);
+  // background-color: rgba(0, 0, 0, 0.466)!important;
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.664) , rgba(0, 0, 0, 0));
+
+}
