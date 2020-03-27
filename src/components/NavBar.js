@@ -17,17 +17,16 @@ import {
 export default function NavBar() {
   return (
     <div>
-      <Navbar bg="dark" variant="dark" color="grey">
+      <Navbar bg="dark" variant="dark" fixed="top" color="grey">
         <Navbar.Brand href="#home" className="pl-5">
           <img
             alt=""
-            src={Logo}
-            width="30"
-            height="30"
+            src="https://www.ableelec.com/wp-content/uploads/2018/06/Able-logo.png"
+            width="200"
             className="d-inline-block align-top"
             style={styles.font}
           />{' '}
-          React Bootstrap
+          {/* React Bootstrap */}
         </Navbar.Brand>
         <Nav className="ml-auto pr-5">
           <Nav.Link href="#coffee"><FontAwesomeIcon icon={faFacebook} style={styles.font} /></Nav.Link>

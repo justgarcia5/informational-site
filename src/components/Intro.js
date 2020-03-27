@@ -9,13 +9,13 @@ export default function Intro() {
   return(
     <div>
       <Zoom slow>
-        <img src={HomeImg} style={styles.image}/>
+        <img src="https://www.ableelec.com/wp-content/uploads/2018/06/light-is-beautiful-TC_slide_1920x680-1.jpg" style={styles.image}/>
       </Zoom>
       <Fade left delay={500}>
         <div className="intro-border">
-          <h1 style={styles.header}>AbleElectric</h1>
+          <img width="500" style={styles.header} src="https://www.ableelec.com/wp-content/uploads/2018/06/Able-logo.png"/>
           <Fade left delay={1000}>
-            <h4 style={styles.font}><i>Proudly making a difference since 1990</i></h4>
+            <h4 style={styles.font}><i>Proudly making a difference since 1992</i></h4>
           </Fade>
         </div>
       </Fade>
@@ -31,11 +31,12 @@ const styles ={
     top: '0px',
     zIndex: -1,
     width: '100%',
-    height: '100vh',
+    // height: '100vh',
     // filter: 'brightness(60%)',
 
   },
   header: {
+    paddingTop: 40,
     marginLeft: 200,
     color: 'white',
     textAlign: 'left',
@@ -43,9 +44,10 @@ const styles ={
     fontFamily: 'Raleway',
   },
   font: {
-    marginLeft: 200,
+    marginLeft: 230,
     color: 'white',
     textAlign: 'left',
-    paddingBottom: 30,
+    paddingTop: 35,
+    paddingBottom: 50,
   },
 }
