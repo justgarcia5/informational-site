@@ -50,7 +50,6 @@ phases:
 artifacts:
   files:
     - .ebextensions/*
-    - manifest.json
     - index.html
     - app.js
     - package.json
