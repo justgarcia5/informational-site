@@ -3,28 +3,24 @@ version: 0.2
 phases:
   install:
     commands:
-      - echo Installing Node 12...
-      - curl -sL https://deb.nodesource.com/setup_12.x | bash -
-      - apt install -y nodejs
-      - echo Installing Yarn...
-      - curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | apt-key add -
-      - echo "deb https://dl.yarnpkg.com/debian/ stable main" | tee /etc/apt/sources.list.d/yarn.list
-      - apt install --no-install-recommends yarn
+      # Install dependencies needed for running tests
+      - npm install
+
+      # Upgrade AWS CLI to the latest version
+      - pip install --upgrade awscli
   pre_build:
     commands:
-      - echo Installing dependencies...
-      - yarn
-  build:
-    commands:
-      # - echo Testing...
-      # - yarn test
-      - echo Building...
-      - yarn build
+      # Discover and run unit tests in the 'tests' directory
+      - npm test
 artifacts:
+  type: zip
   files:
-    - "**/*"
-  discard-paths: no
-  base-directory: dist
+    - README.md
+    - package.json
+    - app.js
+    - .ebextensions/*
+    - node_modules/**/*
+    - public/**/*
 
       # Do not change version. This is the version of aws buildspec, not the version of your buldspec file.
 # version: 0.2
