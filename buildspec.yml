@@ -50,9 +50,9 @@ phases:
 artifacts:
   files:
       public/*
-    - src/*
+    - src/
     - package.json
-    - views/*
+    - views/
     - static/**/*
     - node_modules/async/**/*
     - node_modules/lodash/**/*
