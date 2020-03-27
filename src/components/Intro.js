@@ -2,14 +2,13 @@ import React from 'react';
 import HomeImg from '../images/home4.jpg'
 import Zoom from 'react-reveal/Zoom';
 import Fade from 'react-reveal/Fade';
-import Flip from 'react-reveal/Flip';
 
 
 export default function Intro() {
   return(
     <div>
       <Zoom slow>
-        <img src="https://www.ableelec.com/wp-content/uploads/2018/06/light-is-beautiful-TC_slide_1920x680-1.jpg" style={styles.image}/>
+        <img src={HomeImg} style={styles.image}/>
       </Zoom>
       <Fade left delay={500}>
         <div className="intro-border">

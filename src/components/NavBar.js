@@ -21,7 +21,7 @@ export default function NavBar() {
         <Navbar.Brand href="#home" className="pl-5">
           <img
             alt=""
-            src="https://www.ableelec.com/wp-content/uploads/2018/06/Able-logo.png"
+            src={Logo}
             width="200"
             className="d-inline-block align-top"
             style={styles.font}
