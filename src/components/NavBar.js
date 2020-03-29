@@ -13,7 +13,6 @@ import {
   faTwitter
 } from '@fortawesome/free-brands-svg-icons/'
 
-
 export default function NavBar() {
   return (
     <div>
@@ -22,6 +21,7 @@ export default function NavBar() {
           <img
             alt=""
             src={Logo}
+            width="20"
             className="d-inline-block align-top"
             style={styles.font}
           />{' '}
