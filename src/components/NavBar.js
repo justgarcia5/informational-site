@@ -22,11 +22,10 @@ export default function NavBar() {
           <img
             alt=""
             src={Logo}
-            width="200"
             className="d-inline-block align-top"
             style={styles.font}
           />{' '}
-          {/* React Bootstrap */}
+          React Bootstrap
         </Navbar.Brand>
         <Nav className="ml-auto pr-5">
           <Nav.Link href="#coffee"><FontAwesomeIcon icon={faFacebook} style={styles.font} /></Nav.Link>
